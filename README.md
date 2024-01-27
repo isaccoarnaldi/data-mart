@@ -40,8 +40,9 @@ A sample of some of the rows is shown below:
 
 ***
 
-# Question and Solution
-## 🧹 A. Data Cleansing Steps
+## Question and Solution
+
+### 🧹 A. Data Cleansing Steps
 ````sql
 DROP TABLE IF EXISTS data_mart.clean_weekly_sales;
 CREATE TABLE data_mart.clean_weekly_sales AS
@@ -74,19 +75,19 @@ SELECT
     sales :: NUMERIC / transactions,
     2
   ) AS avg_transaction
-FROM
-  data_mart.weekly_sales;
-SELECT
-  *
-FROM
-  data_mart.clean_weekly_sales
+FROM data_mart.weekly_sales;
+
+SELECT *
+FROM data_mart.clean_weekly_sales
 ````
 
-❗ **Note**
-* Use `TO_DATE` to convert string to `DATE` based on the specified format
-## 🤯 B. Data Exploration
+**Answer**
 
-### 1.  What day of the week is used for each `week_date` value?
+
+
+### B. Data Exploration
+
+#### 1.  What day of the week is used for each `week_date` value?
 ````sql
 SELECT
   DISTINCT TO_CHAR(week_date, 'Day') AS weekday
