@@ -81,8 +81,8 @@ SELECT *
 FROM data_mart.clean_weekly_sales
 ````
 
-**Answer**
-<img width="307" alt="image" src="https://github.com/isaccoarnaldi/data-mart/blob/main/clean_table.png"> 
+###Answer
+<img width="1064" alt="image" src="https://github.com/isaccoarnaldi/data-mart/blob/main/clean_table.png"> 
 
 
 ### B. Data Exploration
