@@ -42,7 +42,7 @@ A sample of some of the rows is shown below:
 
 ## Question and Solution
 
-### 🧹 A. Data Cleansing Steps
+### A. Data Cleansing
 ````sql
 DROP TABLE IF EXISTS data_mart.clean_weekly_sales;
 CREATE TABLE data_mart.clean_weekly_sales AS
