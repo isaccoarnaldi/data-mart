@@ -1,4 +1,46 @@
-# Case Study Answers
+# 🛒 Case Study #5: Data Mart
+<p align="center">
+<img width="400px"  src="https://8weeksqlchallenge.com/images/case-study-designs/5.png" />
+</p>
+
+## 📚 Table of Contents
+- [Business Task](#business-task)
+- [Dataset](#dataset)
+- [Question and Solution](#question-and-solution)
+
+Please note that all the information regarding the case study has been sourced from the following link: [here](https://8weeksqlchallenge.com/case-study-5/). 
+
+***
+
+## Business Task
+Danny seeks assistance in analyzing the sales performance of Data Mart following a major sustainability update in June 2020, which involved implementing sustainable packaging methods. He wants to quantify the impact of these changes across various business areas and determine the most affected platforms, regions, segments, and customer types. Additionally, he is interested in insights to minimize the impact on sales for future sustainability updates.
+
+## Dataset
+
+The case study involves a single table, 'data_mart.weekly_sales,' depicted in the Entity Relationship Diagram. 
+
+<img width="207" alt="image" src="https://8weeksqlchallenge.com/images/case-study-5-erd.png"> 		
+
+This table encompasses international operations with a multi-region strategy, incorporating both retail and online platforms through a Shopify store. Customer segment and type data include personal age and demographics shared with Data Mart. The dataset includes columns such as `transactions` (count of unique purchases) and `sales` (dollar amount). Each record is tied to a specific aggregated weekly sales data slice, indicated by the `week_date` representing the start of the sales week. 
+
+A sample of some of the rows is shown below:
+
+| week_date |   region      |   platform  |   segment |   customer_type |   transactions |   sales       |
+| --------- | --------------| ----------- | --------- | --------------- | -------------- | ------------- |
+| 9/9/20    | OCEANIA       |   Shopify   |   C3      |   New           |   610          |   110033.89   |
+| 29/7/20   | AFRICA        |   Retail    |   C1      |   New           |   110692       |   3053771.19  |
+| 22/7/20   | EUROPE        |   Shopify   |   C4      |   Existing      |   24           |   8101.54     |
+| 13/5/20   | AFRICA        |   Shopify   |   null    |   Guest         |   5287         |   1003301.37  |
+| 24/7/19   | ASIA          |   Retail    |   C1      |   New           |   127342       |   3151780.41  |
+| 10/7/19   | CANADA        |   Shopify   |   F3      |   New           |   51           |   8844.93     |
+| 26/6/19   | OCEANIA       |   Retail    |   C3      |   New           |   152921       |   5551385.36  |
+| 29/5/19   | SOUTH AMERICA |   Shopify   |   null    |   New           |   53           |   10056.2     |
+| 22/8/18   | AFRICA        |   Retail    |   null    |   Existing      |   31721        |   1718863.58  |
+| 25/7/18   | SOUTH AMERICA |   Retail    |   null    |   New           |   2136         |   81757.91    |
+
+***
+
+# Question and Solution
 ## 🧹 A. Data Cleansing Steps
 ````sql
 DROP TABLE IF EXISTS data_mart.clean_weekly_sales;
