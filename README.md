@@ -17,7 +17,7 @@ Danny seeks assistance in analyzing the sales performance of Data Mart following
 
 ## Dataset
 
-The case study involves a single table, 'data_mart.weekly_sales,' depicted in the Entity Relationship Diagram. 
+The case study involves a single table, `data_mart.weekly_sales`, depicted in the Entity Relationship Diagram. 
 
 <img width="207" alt="image" src="https://8weeksqlchallenge.com/images/case-study-5-erd.png"> 		
 
