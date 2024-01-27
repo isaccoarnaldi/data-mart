@@ -19,7 +19,7 @@ Danny seeks assistance in analyzing the sales performance of Data Mart following
 
 The case study involves a single table, `data_mart.weekly_sales`, depicted in the Entity Relationship Diagram. 
 
-<img width="207" alt="image" src="https://8weeksqlchallenge.com/images/case-study-5-erd.png"> 		
+<img alt="image" src="https://8weeksqlchallenge.com/images/case-study-5-erd.png"> 		
 
 This table encompasses international operations with a multi-region strategy, incorporating both retail and online platforms through a Shopify store. Customer segment and type data include personal age and demographics shared with Data Mart. The dataset includes columns such as `transactions` (count of unique purchases) and `sales` (dollar amount). Each record is tied to a specific aggregated weekly sales data slice, indicated by the `week_date` representing the start of the sales week. 
 
