@@ -532,17 +532,18 @@ Areas of the business having the highest negative impact in sales metrics perfor
 	WHERE sale_diff IS NOT NULL
 	ORDER BY 3
 
-	````
-	**Answer**
-	| region        | rate       | percentage\_of\_change |
-	| ------------- | ---------- | ---------------------- |
-	| ASIA          | \-53436845 | \-3.26                 |
-	| OCEANIA       | \-71321100 | \-3.03                 |
-	| SOUTH AMERICA | \-4584174  | \-2.15                 |
-	| CANADA        | \-8174013  | \-1.92                 |
-	| USA           | \-10814843 | \-1.60                 |
-	| AFRICA        | \-9146811  | \-0.54                 |
-	| EUROPE        | 5152392    | 4.73                   |
+````
+
+**Answer**
+| region        | rate       | percentage\_of\_change |
+| ------------- | ---------- | ---------------------- |
+| ASIA          | \-53436845 | \-3.26                 |
+| OCEANIA       | \-71321100 | \-3.03                 |
+| SOUTH AMERICA | \-4584174  | \-2.15                 |
+| CANADA        | \-8174013  | \-1.92                 |
+| USA           | \-10814843 | \-1.60                 |
+| AFRICA        | \-9146811  | \-0.54                 |
+| EUROPE        | 5152392    | 4.73                   |
 
 
 Similarly, we execute the above query for each field and get the following results
