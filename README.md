@@ -303,6 +303,8 @@ ORDER BY 3 DESC
 **Answer**
 <a href="https://ibb.co/thP3R7g"><img src="https://i.ibb.co/9v3GPF6/Capture.png" alt="Capture" border="0"></a>
 
+#
+
 ❗ **Note**
 * The question is asking for the contribution to sales of 2 variables `age_band`, `demographic`. Instead of only considering both of them at the same time, we should also account for each variable separately
 
