@@ -544,8 +544,8 @@ Areas of the business having the highest negative impact in sales metrics perfor
 	| AFRICA        | \-9146811  | \-0.54                 |
 	| EUROPE        | 5152392    | 4.73                   |
 
-#
-Similarly, we execute the avobe query for each field and get the following results
+
+Similarly, we execute the above query for each field and get the following results
 *   `platform`
 
 | platform | rate        | percentage\_of\_change |
@@ -577,5 +577,3 @@ Similarly, we execute the avobe query for each field and get the following resul
 | Guest          | \-77202666 | \-3.00                 |
 | Existing       | \-83872973 | \-2.27                 |
 | New            | 8750245    | 1.01                   |
-
----
